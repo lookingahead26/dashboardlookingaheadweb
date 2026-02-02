@@ -14,6 +14,7 @@
             --accent-secondary: #ff6b6b;
             --accent-orange: #ff8c42;
             --accent-blue: #4da6ff;
+            --accent-green: #10b981;
             --text-primary: #ffffff;
             --text-secondary: #8b8b9e;
             --text-muted: #5a5a6e;
@@ -95,6 +96,9 @@
             display: inline-flex; align-items: center; padding: 3px 8px;
             border-radius: 16px; font-size: 0.65rem; font-weight: 600; margin-top: 6px;
             background: rgba(230, 57, 70, 0.15); color: var(--accent-primary);
+        }
+        .kpi-trend.green {
+            background: rgba(16, 185, 129, 0.15); color: var(--accent-green);
         }
         .chart-card {
             background: var(--bg-card); border: 1px solid var(--border-color);
@@ -184,7 +188,7 @@
         }
         .media-value { font-size: 1.2rem; font-weight: 700; font-family: 'Space Mono', monospace; }
         .media-value.spent { color: var(--accent-secondary); }
-        .media-value.cpv { color: var(--accent-orange); }
+        .media-value.cpv { color: var(--accent-green); }
         .media-value.purchases { color: var(--accent-blue); }
         .media-value.roi { color: var(--accent-primary); }
         .charts-grid { display: flex; flex-direction: column; gap: 20px; }
@@ -232,33 +236,33 @@
         <div class="kpi-row">
             <div class="kpi-card highlight">
                 <div class="kpi-label">Faturamento Total</div>
-                <div class="kpi-value money">R$ 1,93M</div>
-                <div class="kpi-subtext">R$ 1.931.140,22</div>
+                <div class="kpi-value money">R$ 1,96M</div>
+                <div class="kpi-subtext">R$ 1.959.192,11</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">Cadeiras Vendidas</div>
-                <div class="kpi-value">3.082</div>
-                <span class="kpi-trend">▲ 1.711 vendas</span>
+                <div class="kpi-value">3.159</div>
+                <span class="kpi-trend">▲ 1.763 vendas</span>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">Interno</div>
-                <div class="kpi-value">2.700</div>
-                <div class="kpi-subtext">87,6% do total</div>
+                <div class="kpi-value">2.775</div>
+                <div class="kpi-subtext">87,8% do total</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">Externo</div>
-                <div class="kpi-value">382</div>
-                <div class="kpi-subtext">12,4% do total</div>
+                <div class="kpi-value">384</div>
+                <div class="kpi-subtext">12,2% do total</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">Investimento Mídia</div>
-                <div class="kpi-value" style="color: var(--accent-secondary);">R$ 778K</div>
-                <div class="kpi-subtext">R$ 778.765,61</div>
+                <div class="kpi-value" style="color: var(--accent-secondary);">R$ 786K</div>
+                <div class="kpi-subtext">R$ 786.878,18</div>
             </div>
             <div class="kpi-card">
                 <div class="kpi-label">CPV Estimado</div>
-                <div class="kpi-value" style="color: var(--accent-orange);">R$ 2.151</div>
-                <div class="kpi-subtext">362 purchases mídia</div>
+                <div class="kpi-value" style="color: var(--accent-green);">R$ 2.012</div>
+                <div class="kpi-subtext">391 purchases mídia</div>
             </div>
         </div>
 
@@ -269,11 +273,11 @@
                     <div class="chart-legend">
                         <div class="legend-item">
                             <div class="legend-dot interno"></div>
-                            <span>Interno: R$ 1.672.815,51</span>
+                            <span>Interno: R$ 1.699.580,51</span>
                         </div>
                         <div class="legend-item">
                             <div class="legend-dot externo"></div>
-                            <span>Externo: R$ 258.324,71</span>
+                            <span>Externo: R$ 259.611,60</span>
                         </div>
                     </div>
                 </div>
@@ -292,19 +296,19 @@
                         <line x1="0" y1="50" x2="800" y2="50" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
                         <line x1="0" y1="100" x2="800" y2="100" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
                         <line x1="0" y1="150" x2="800" y2="150" stroke="rgba(255,255,255,0.05)" stroke-width="1"/>
-                        <path class="chart-area" d="M 0 180 L 50 174 L 100 134 L 150 110 L 200 90 L 300 70 L 400 50 L 500 34 L 600 20 L 700 6 L 800 2 L 800 200 L 0 200 Z" fill="url(#areaGradient)"/>
-                        <path class="chart-line" d="M 0 180 L 50 174 L 100 134 L 150 110 L 200 90 L 300 70 L 400 50 L 500 34 L 600 20 L 700 6 L 800 2" stroke="url(#lineGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                        <circle cx="100" cy="134" r="5" fill="#e63946"/>
-                        <circle cx="200" cy="90" r="5" fill="#e63946"/>
-                        <circle cx="400" cy="50" r="5" fill="#e63946"/>
-                        <circle cx="600" cy="20" r="5" fill="#e63946"/>
+                        <path class="chart-area" d="M 0 180 L 50 174 L 100 132 L 150 108 L 200 88 L 300 68 L 400 48 L 500 32 L 600 18 L 700 4 L 800 2 L 800 200 L 0 200 Z" fill="url(#areaGradient)"/>
+                        <path class="chart-line" d="M 0 180 L 50 174 L 100 132 L 150 108 L 200 88 L 300 68 L 400 48 L 500 32 L 600 18 L 700 4 L 800 2" stroke="url(#lineGradient)" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="100" cy="132" r="5" fill="#e63946"/>
+                        <circle cx="200" cy="88" r="5" fill="#e63946"/>
+                        <circle cx="400" cy="48" r="5" fill="#e63946"/>
+                        <circle cx="600" cy="18" r="5" fill="#e63946"/>
                         <circle cx="800" cy="2" r="6" fill="#e63946" stroke="#fff" stroke-width="2"/>
                         <text x="100" y="170" fill="#8b8b9e" font-size="12" text-anchor="middle">Ago</text>
                         <text x="300" y="170" fill="#8b8b9e" font-size="12" text-anchor="middle">Out</text>
                         <text x="500" y="170" fill="#8b8b9e" font-size="12" text-anchor="middle">Nov</text>
                         <text x="650" y="170" fill="#8b8b9e" font-size="12" text-anchor="middle">Dez</text>
-                        <text x="800" y="170" fill="#8b8b9e" font-size="12" text-anchor="middle">Jan</text>
-                        <text x="790" y="10" fill="#e63946" font-size="14" font-weight="bold" text-anchor="end">R$ 1,93M</text>
+                        <text x="800" y="170" fill="#8b8b9e" font-size="12" text-anchor="middle">Fev</text>
+                        <text x="790" y="10" fill="#e63946" font-size="14" font-weight="bold" text-anchor="end">R$ 1,96M</text>
                     </svg>
                 </div>
             </div>
@@ -317,7 +321,7 @@
                     <div class="ticket-breakdown">
                         <div class="ticket-item plateia-alta">
                             <span class="ticket-type">Plateia Alta</span>
-                            <span class="ticket-count">579</span>
+                            <span class="ticket-count">580</span>
                         </div>
                         <div class="ticket-item classic">
                             <span class="ticket-type">Classic</span>
@@ -325,7 +329,7 @@
                         </div>
                         <div class="ticket-item parte-superior">
                             <span class="ticket-type">Parte Superior</span>
-                            <span class="ticket-count">368</span>
+                            <span class="ticket-count">372</span>
                         </div>
                         <div class="ticket-item vip">
                             <span class="ticket-type">VIP</span>
@@ -344,14 +348,14 @@
                         <div class="revenue-bar-container">
                             <span class="bar-label">Interno</span>
                             <div class="bar-track">
-                                <div class="bar-fill interno">R$ 1.672.815</div>
+                                <div class="bar-fill interno">R$ 1.699.580</div>
                             </div>
                         </div>
                         <div class="revenue-bar-container">
                             <span class="bar-label">Externo</span>
                             <div class="bar-track">
                                 <div class="bar-fill externo"></div>
-                                <span class="bar-value">R$ 258.324</span>
+                                <span class="bar-value">R$ 259.611</span>
                             </div>
                         </div>
                     </div>
@@ -374,7 +378,7 @@
                         </div>
                         <div class="lote-item">
                             <div class="lote-name">Lote 1</div>
-                            <div class="lote-count">331</div>
+                            <div class="lote-count">371</div>
                         </div>
                         <div class="lote-item">
                             <div class="lote-name">Matriz V4</div>
@@ -408,15 +412,15 @@
                     <div class="media-stats">
                         <div class="media-stat">
                             <span class="media-label">Investimento</span>
-                            <span class="media-value spent">R$ 778.765</span>
+                            <span class="media-value spent">R$ 786.878</span>
                         </div>
                         <div class="media-stat">
                             <span class="media-label">Purchases</span>
-                            <span class="media-value purchases">362</span>
+                            <span class="media-value purchases">391</span>
                         </div>
                         <div class="media-stat">
                             <span class="media-label">CPV Estimado</span>
-                            <span class="media-value cpv">R$ 2.151</span>
+                            <span class="media-value cpv">R$ 2.012</span>
                         </div>
                         <div class="media-stat">
                             <span class="media-label">ROI</span>
